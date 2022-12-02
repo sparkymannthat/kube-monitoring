@@ -48,11 +48,11 @@ taint the agentpool nodes
 
 Check the NS kube-system to make sure they are all running 
 
-k taint no aks-agentpool-42294707-vmss000000 notallowuser:NoSchedule
+k taint no aks-agentpool-42294707-vmss000000 notallowuser=true:NoSchedule
 
 
 remove taint
-k taint no aks-agentpool-42294707-vmss000000 notallowuser:NoSchedule-
+k taint no aks-agentpool-42294707-vmss000000 notallowuser=true:NoSchedule-
 
 
 run the pwsh to deploy the app
