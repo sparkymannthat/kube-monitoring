@@ -34,6 +34,10 @@ helm install grafana grafana/grafana \
 
 edit the deployments and add the following:
 
+tolerations:
+  -key: "notallowuser"
+  operator: "exists"
+  effect: "NoSchedule"
 
 
 check the pods are running in the system nodes.
