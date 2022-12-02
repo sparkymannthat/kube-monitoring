@@ -1,7 +1,7 @@
 # kube-monitoring
 kube monitoring stuff
 
-Rough guide.
+guide
 https://www.civo.com/learn/kubernetes-node-monitoring-with-prometheus-and-grafana
 https://myownpicloud.wordpress.com/2021/02/23/monitor-aks-infrastructure-using-prometheus-and-grafana/
 
