@@ -31,6 +31,13 @@ helm install grafana grafana/grafana \
 --values grafana.yaml \
 --set service.type=ClusterIP
 
+
+edit the deployments and add the following:
+
+
+
+check the pods are running in the system nodes.
+
 add 1860 dashboard to grafana
 
 remove 
