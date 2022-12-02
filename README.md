@@ -39,3 +39,26 @@ helm uninstall prometheus prometheus-community/prometheus
 
 helm uninstall grafana grafana/grafana
 
+
+
+
+
+####testing
+taint the agentpool nodes
+
+Check the NS kube-system to make sure they are all running 
+
+k taint no aks-agentpool-42294707-vmss000000 notallowuser:NoSchedule
+
+
+remove taint
+k taint no aks-agentpool-42294707-vmss000000 notallowuser:NoSchedule-
+
+
+run the pwsh to deploy the app
+
+after deployment check the pods are on the the correct nodes
+
+k get po -l deploy=testapp -A -o wide
+
+
