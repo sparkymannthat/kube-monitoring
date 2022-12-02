@@ -39,6 +39,10 @@ tolerations:
   operator: "exists"
   effect: "NoSchedule"
 
+      tolerations:
+       - key: "userpool"
+         operator: "Exists"
+         effect: "NoSchedule"
 
 check the pods are running in the system nodes.
 
