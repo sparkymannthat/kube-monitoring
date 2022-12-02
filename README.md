@@ -34,13 +34,9 @@ helm install grafana grafana/grafana \
 
 edit the deployments and add the following:
 
-tolerations:
-  -key: "notallowuser"
-  operator: "exists"
-  effect: "NoSchedule"
 
       tolerations:
-       - key: "userpool"
+       - key: "notallowuser"
          operator: "Exists"
          effect: "NoSchedule"
 
